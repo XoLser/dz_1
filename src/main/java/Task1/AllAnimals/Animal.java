@@ -1,4 +1,6 @@
-package Task1;
+package Task1.AllAnimals;
+
+import Task1.Illness;
 
 import java.time.LocalDate;
 
@@ -8,6 +10,7 @@ public class Animal {
     private String ownerName;
     private LocalDate birthday;
 
+
     public Animal() {
     }
     public Animal(String name, Illness illness, String ownerName, LocalDate birthday) {
@@ -15,6 +18,7 @@ public class Animal {
         this.illness = illness;
         this.ownerName = ownerName;
         this.birthday = birthday;
+
     }
 
     public void setName(String name){
@@ -58,9 +62,18 @@ public class Animal {
         swim();
         toFly();
         sleep();
-        System.out.println("Animals без крыльев летать не могут  !");
     }
     public void breathe(){
         System.out.println("breathe");
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", illness=" + illness +
+                ", ownerName='" + ownerName + '\'' +
+                ", birthday=" + birthday +
+                '}';
     }
 }

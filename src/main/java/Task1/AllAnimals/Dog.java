@@ -1,4 +1,6 @@
-package Task1;
+package Task1.AllAnimals;
+
+import Task1.Illness;
 
 import java.time.LocalDate;
 
